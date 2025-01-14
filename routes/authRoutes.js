@@ -5,7 +5,7 @@ const { registerController, loginController, logoutController } = require('../co
 const router = express.Router()
 
 //routes
-router.post('/regester', registerController)
+router.post('/register', registerController)
 router.post('/login', loginController)
 router.post('/logout', logoutController)
 
