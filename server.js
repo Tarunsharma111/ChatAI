@@ -30,6 +30,9 @@ const PORT = process.env.PORT
 //API routes
 app.use("/api/v1/auth", authRoutes);
 
+// openani
+app.use("/api/v1/openai", require("./routes/openaiRoutes"));
+
 // listen server
 app.listen(PORT, () => {
     console.log(`server is running on ${PORT} port`)
